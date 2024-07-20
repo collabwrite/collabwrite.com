@@ -1,56 +1,56 @@
 [
   {
     "id": 1,
-    "name1": "Search engine",
-    "name2": "optimization",
+    "name1": "Machine Learning &",
+    "name2": "AI Solutions",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
-    "link": "./",
+    "link": "./machine-learning-ai-solutions",
     "image": "./services/01.svg"
   },
   {
     "id": 2,
-    "name1": "Pay-per-click",
-    "name2": "advertising",
-    "background": "h-[310px] p-12 bg-black text-white rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "name1": "Product PoC / MVP",
+    "name2": "Development",
+    "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
-    "link": "./",
+    "link": "./product-development",
     "image": "./services/02.svg"
   },
   {
     "id": 3,
-    "name1": "Social Media",
-    "name2": "Marketing",
+    "name1": "Custom Software",
+    "name2": "Development",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "./services/aw.svg",
-    "link": "./",
+    "link": "./custom-software-development",
     "image": "./services/03.svg"
   },
   {
     "id": 4,
-    "name1": "Email",
-    "name2": "Marketing",
+    "name1": "Digital Marketing",
+    "name2": "Services",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
-    "link": "./",
+    "link": "./digital-marketing-services",
     "image": "./services/04.svg"
   },
   {
     "id": 5,
-    "name1": "Content",
-    "name2": "Creation",
-    "background": "h-[310px] p-12 bg-black text-white rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "name1": "Cybersecurity",
+    "name2": "",
+    "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
-    "link": "./",
+    "link": "./cybersecurity",
     "image": "./services/05.svg"
   },
   {
     "id": 6,
-    "name1": "Analytics and",
-    "name2": "Tracking",
-    "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "name1": "Hybrid",
+    "name2": "Teams",
+    "background": "h-[310px] p-12 bg-black text-white rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/aw.svg",
-    "link": "./",
+    "link": "./hybrid-teams",
     "image": "./services/06.svg"
   }
 ]

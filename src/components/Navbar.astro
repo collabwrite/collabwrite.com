@@ -1,12 +1,11 @@
 ---
-// Define your navigation links here
-const navLinks = [
-  { href: '/about', label: 'About us' },
-  { href: '/services', label: 'Services' },
-  { href: '/#projects', label: 'Use Cases' },
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/blog', label: 'Blog' }
-]
+import {
+  Astronav,
+  MenuItems,
+  MenuIcon,
+  Dropdown,
+  DropdownItems
+} from 'astro-navbar'
 
 import Container from './Container.astro'
 ---
@@ -15,104 +14,119 @@ import Container from './Container.astro'
   <nav class='w-full top-0 left-0 z-50 fixed bg-white'>
     <Container>
       <div class='flex flex-wrap items-center justify-between mx-auto py-3'>
-        <a href='/' class='flex items-center space-x-3 rtl:space-x-reverse'>
-          <img src='/Logo.svg' class='h-8' alt='Logo' />
-        </a>
-        <button
-          data-collapse-toggle='navbar-default'
-          type='button'
-          class='inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2'
-          aria-controls='navbar-default'
-          aria-expanded='false'
-        >
-          <span class='sr-only'>Open main menu</span>
-          <svg
-            class='w-5 h-5'
-            aria-hidden='true'
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 17 14'
-          >
-            <path
-              stroke='currentColor'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-              d='M1 1h15M1 7h15M1 13h15'></path>
-          </svg>
-        </button>
-        <div class='hidden w-full md:block md:w-auto' id='navbar-default'>
-          <ul
-            class='font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white'
-          >
-            {
-              navLinks.map((link) => (
-                <li>
-                  <a
-                    href={link.href}
-                    class='block py-2 px-3 text-black rounded md:bg-transparent md:p-0'
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))
-            }
-            <li>
-              <a
-                class='md:hidden px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex'
-                href='https://github.com/manulthanura/Positivus'
-                target='_blank'
-              >
-                <h2 class='text-center text-xl font-normal leading-7'>
-                  Request a quot
-                </h2>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class='hidden w-full md:block md:w-auto' id='navbar-default'>
+        <Astronav closeOnClick>
+          <div class='flex w-full lg:w-auto justify-between'>
+            <a href='/' class='flex items-center space-x-3 rtl:space-x-reverse'>
+              <img src='/Logo.svg' class='h-10' alt='Logo' />
+            </a>
+            <div class='block lg:hidden'>
+              <MenuIcon class='w-8 h-8 text-gray-800' />
+            </div>
+          </div>
+          <MenuItems class='hidden lg:flex'>
+            <ul class='flex flex-col lg:flex-row lg:gap-5'>
+              <li>
+                <Dropdown class='group'>
+                  <button class='flex items-center gap-2'>
+                    <span
+                      class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right"
+                      >Services</span
+                    >
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke-width='3'
+                      stroke='currentColor'
+                      class='w-3 h-3 mt-0.5 group-open:rotate-180'
+                    >
+                      <path
+                        stroke-linecap='round'
+                        stroke-linejoin='round'
+                        d='M19.5 8.25l-7.5 7.5-7.5-7.5'></path>
+                    </svg>
+                  </button>
+                  <DropdownItems class='relative'>
+                    <div
+                      class='lg:absolute bg-white top-2 w-80 border shadow rounded p-4'
+                    >
+                      <ul>
+                        <li class='p-2 hover:bg-lime'>
+                          <a href='/machine-learning-ai-solutions'
+                            >Machine Learning / AI Solutions</a
+                          >
+                        </li>
+                        <li class='p-2 hover:bg-lime'>
+                          <a href='/product-development'
+                            >Product PoC / MVP Development</a
+                          >
+                        </li>
+                        <li class='p-2 hover:bg-lime'>
+                          <a href='/custom-software-development'
+                            >Custom Software Development</a
+                          >
+                        </li>
+                        <li class='p-2 hover:bg-lime'>
+                          <a href='/digital-marketing-services'
+                            >Digital Marketing Services</a
+                          >
+                        </li>
+                        <li class='p-2 hover:bg-lime'>
+                          <a href='/cybersecurity'>Cybersecutiry</a>
+                        </li>
+                        <li class='p-2 hover:bg-lime'>
+                          <a href='/hybrid-teams'>Hybrid Teams</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </DropdownItems>
+                </Dropdown>
+              </li>
+              <li>
+                <a
+                  href='/about'
+                  class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href='/resources'
+                  class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right"
+                  >Resources</a
+                >
+              </li>
+              <li>
+                <a
+                  href='/blog'
+                  class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class='md:hidden px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex'
+                  href='https://github.com/manulthanura/Positivus'
+                  target='_blank'
+                >
+                  <h2 class='text-center text-xl font-normal leading-7'>
+                    Schedule a call
+                  </h2>
+                </a>
+              </li>
+            </ul>
+          </MenuItems>
           <a
-            class='px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex'
+            class='hidden lg:flex px-9 py-5 rounded-2xl border border-zinc-900 bg-white hover:bg-black text-black hover:text-white inline-flex'
             href='https://github.com/manulthanura/Positivus'
             target='_blank'
-            ><h2 class='text-center text-xl font-normal leading-7'>
-              Request a quot
+          >
+            <h2 class='text-center text-xl font-normal leading-7'>
+              Schedule a call
             </h2>
           </a>
-        </div>
+        </Astronav>
       </div>
     </Container>
   </nav>
 </header>
-
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
-    const navbar = document.getElementById('navbar-default')
-
-    // Check if navbar exists before adding event listeners
-    if (navbar) {
-      const toggleButton = document.querySelector(
-        '[data-collapse-toggle="navbar-default"]'
-      )
-      const navLinks = navbar.querySelectorAll('a')
-
-      if (toggleButton) {
-        toggleButton.addEventListener('click', () =>
-          navbar.classList.toggle('hidden')
-        )
-      } else {
-        console.warn(
-          'Navbar toggle button not found. Toggle functionality might be affected.'
-        )
-      }
-
-      navLinks.forEach((link) =>
-        link.addEventListener('click', () => navbar.classList.add('hidden'))
-      )
-    } else {
-      console.warn(
-        "Navbar element with ID 'navbar-default' not found. Navigation functionality might be affected."
-      )
-    }
-  })
-</script>
