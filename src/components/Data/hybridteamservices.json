@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name1": "Generative",
-    "name2": "AI",
+    "name1": "Technology and",
+    "name2": "IT Professionals",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
@@ -10,8 +10,8 @@
   },
   {
     "id": 2,
-    "name1": "Machine",
-    "name2": "Learning",
+    "name1": "Project Managers and",
+    "name2": "Team Leaders",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
@@ -19,8 +19,8 @@
   },
   {
     "id": 3,
-    "name1": "Natural Language",
-    "name2": "Processing",
+    "name1": "Digital Marketing",
+    "name2": "Specialists",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "./services/aw.svg",
     "link": "./",
@@ -28,8 +28,8 @@
   },
   {
     "id": 4,
-    "name1": "Computer",
-    "name2": "Vision",
+    "name1": "Human Resources and",
+    "name2": "People Operations",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
@@ -37,8 +37,8 @@
   },
   {
     "id": 5,
-    "name1": "Chat GPT",
-    "name2": "Integration",
+    "name1": "Data Entry",
+    "name2": "Operators",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
@@ -46,8 +46,8 @@
   },
   {
     "id": 6,
-    "name1": "AI Chatbot",
-    "name2": "Development",
+    "name1": "Customer Service",
+    "name2": "Representatives",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "./services/aw.svg",
     "link": "./",

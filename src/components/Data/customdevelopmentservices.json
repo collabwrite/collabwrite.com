@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name1": "Generative",
-    "name2": "AI",
+    "name1": "Web, Mobile & Enterprise",
+    "name2": "Application Development",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
@@ -10,8 +10,8 @@
   },
   {
     "id": 2,
-    "name1": "Machine",
-    "name2": "Learning",
+    "name1": "Quality Assurance (QA)",
+    "name2": "and Testing",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
@@ -19,8 +19,8 @@
   },
   {
     "id": 3,
-    "name1": "Natural Language",
-    "name2": "Processing",
+    "name1": "Software Maintenance",
+    "name2": "and Support",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "./services/aw.svg",
     "link": "./",
@@ -28,8 +28,8 @@
   },
   {
     "id": 4,
-    "name1": "Computer",
-    "name2": "Vision",
+    "name1": "Cloud Integration",
+    "name2": "and Migration",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
@@ -37,8 +37,8 @@
   },
   {
     "id": 5,
-    "name1": "Chat GPT",
-    "name2": "Integration",
+    "name1": "E-commerce/ONDC",
+    "name2": "Platforms",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
@@ -46,8 +46,8 @@
   },
   {
     "id": 6,
-    "name1": "AI Chatbot",
-    "name2": "Development",
+    "name1": "Software Design/UI/UX",
+    "name2": "and Development",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "./services/aw.svg",
     "link": "./",
