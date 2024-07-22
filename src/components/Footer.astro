@@ -2,17 +2,31 @@
 import Container from './Container.astro'
 ---
 
-<footer class='bg-black text-white bg-fixed bg-bottom text-black'>
+<footer class='bg-black text-white bg-fixed bg-bottom text-black mt-20'>
   <Container>
     <div class='py-6'>
       <div class='flex flex-col items-center justify-between md:flex-row'>
-        <div class='flex items-center space-x-3 rtl:space-x-reverse bg-white'>
-          <img
-            class='w-64'
-            src='/Logo.svg'
-            alt='Collabwrite Logo'
-            class='bg-white'
-          />
+        <div>
+          <div class='flex items-center space-x-3 rtl:space-x-reverse mb-2'>
+            <img
+              class='w-64 invert'
+              src='/Logo.svg'
+              alt='Collabwrite Logo'
+              class='bg-white'
+            />
+          </div>
+          <a
+            class='px-9 py-5 bg-zinc-900 hover:bg-lime text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex'
+            rel='noopener noreferrer'
+            href='https://www.linkedin.com/company/collabwrite'
+            target='_blank'
+          >
+            <img
+              src='./logos/linkedin.svg'
+              class='bg-white border rounded-md'
+              alt='Collabwrite - Linkedin Profile'
+            /></a
+          >
         </div>
         <div class='flex mt-4 md:m-0'>
           <div class='-mx-4 text-center'>

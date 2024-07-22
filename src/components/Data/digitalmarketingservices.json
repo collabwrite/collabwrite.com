@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name1": "Generative",
-    "name2": "AI",
+    "name1": "Search engine",
+    "name2": "optimization",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
@@ -10,17 +10,17 @@
   },
   {
     "id": 2,
-    "name1": "Machine",
-    "name2": "Learning",
-    "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "name1": "Pay-per-click",
+    "name2": "advertising",
+    "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
     "image": "./services/02.svg"
   },
   {
     "id": 3,
-    "name1": "Natural Language",
-    "name2": "Processing",
+    "name1": "Social Media",
+    "name2": "Marketing",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "./services/aw.svg",
     "link": "./",
@@ -28,8 +28,8 @@
   },
   {
     "id": 4,
-    "name1": "Computer",
-    "name2": "Vision",
+    "name1": "Email",
+    "name2": "Marketing",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
@@ -37,17 +37,17 @@
   },
   {
     "id": 5,
-    "name1": "Chat GPT",
-    "name2": "Integration",
-    "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+    "name1": "Content",
+    "name2": "Creation",
+    "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
     "link": "./",
     "image": "./services/05.svg"
   },
   {
     "id": 6,
-    "name1": "AI Chatbot",
-    "name2": "Development",
+    "name1": "Analytics and",
+    "name2": "Tracking",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "./services/aw.svg",
     "link": "./",
