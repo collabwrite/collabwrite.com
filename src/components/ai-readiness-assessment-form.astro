@@ -1,0 +1,165 @@
+---
+import Container from './Container.astro'
+console.log('hi')
+
+if (Astro.request.method === 'POST') {
+  try {
+    const data = await Astro.request.formData()
+    const name = data.get('username')
+    const email = data.get('email')
+    const password = data.get('password')
+    // Do something with the data
+    console.log('hi', data)
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message)
+    }
+  }
+}
+---
+
+<Container>
+  <div class='relative flex flex-col items-center'>
+    <div class='items-center w-full max-w-md'>
+      <form method='POST' id='identifyForm'>
+        <div>
+          <label for='email' class='block mb-2 text-base font-medium text-black'
+            >Email</label
+          >
+          <input
+            type='text'
+            name='email'
+            class='block p-3 w-full text-base text-black bg-white rounded-lg border shadow-sm focus:ring-black focus:border-black'
+            placeholder='Email'
+            required
+          />
+        </div>
+
+        <div class=''>
+          <label for='name' class='block mb-2 text-base font-medium text-black'>
+            Name</label
+          >
+          <input
+            type='text'
+            name='name'
+            class='shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5'
+            placeholder='Name'
+            required
+          />
+        </div>
+        <div class=''>
+          <label for='role' class='block mb-2 text-base font-medium text-black'
+            >Role</label
+          >
+          <select
+            name='role'
+            class='shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5'
+          >
+            <option value='ceofounder'>CEO/Founder</option>
+            <option value='ctociocoo'>CTO/CIO/COO </option>
+            <option value='vpdirectorofit'
+              >VP/Director of IT/Engineering
+            </option>
+            <option value='datascientist'>Data Scientist</option>
+            <option value='aimlengineer'>AI/ML Engineer</option>
+            <option value='productmanager'>Product Manager</option>
+            <option value='marketingmanager'>Marketing Manager</option>
+            <option value='other'>Other (please specify)</option>
+          </select>
+        </div>
+        <div class='sm:col-span-2'>
+          <label
+            for='companyname'
+            class='block mb-2 text-base font-medium text-black dark:text-gray-400'
+            >Company Name</label
+          >
+          <input
+            type='text'
+            name='companyname'
+            class='shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5'
+            placeholder='Company Name'
+            required
+          />
+        </div>
+        <div class='sm:col-span-2'>
+          <label
+            for='website'
+            class='block mb-2 text-base font-medium text-black dark:text-gray-400'
+            >Website</label
+          >
+          <input
+            type='text'
+            name='website'
+            class='shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5'
+            placeholder='Website'
+            required
+          />
+        </div>
+        <div class='flex justify-center'>
+          <input
+            type='checkbox'
+            name='hascurrenttools'
+            class='shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-8'
+            required
+          />
+          <label
+            for='hascurrenttools'
+            class='block m-2 text-base font-medium text-black dark:text-gray-400'
+            >Check if you are currently using AI tools</label
+          >
+        </div>
+        <div class='sm:col-span-2 py-5'>
+          <label
+            for='aitoolslist'
+            class='block mb-2 text-base font-medium text-black dark:text-gray-400'
+            >If yes, what AI tools are you using?
+          </label>
+          <input
+            type='text'
+            name='aitoolslist'
+            class='shadow-sm bg-white border text-black text-base rounded-lg focus:ring-black focus:border-black block w-full p-2.5'
+            placeholder='List AI Tools'
+            required
+          />
+        </div>
+        <div>
+          <label
+            for='challenges'
+            class='block text-sm font-medium text-black dark:text-gray-400'
+            >What challenges are you facing with your current AI implementation?
+          </label>
+
+          <textarea
+            name='challenges'
+            rows='6'
+            class='block p-2.5 w-full text-base text-black bg-white rounded-lg shadow-sm border focus:ring-black focus:border-black'
+            placeholder='Challenges'></textarea>
+        </div>
+        <button
+          class='px-9 py-5 mt-10 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex'
+          type='submit'
+          aria-label='Start AI Readiness Assessment'
+        >
+          <h2 class='text-center text-xl font-normal leading-7'>
+            Start AI Readiness Assessment
+          </h2>
+        </button>
+        <a
+          class="text-black justify-items-center md:justify-items-start gap-2.5 inline-flex after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right"
+          href='#assessmentoverview'
+        >
+          AI Readiness Assessment Overview
+        </a>
+      </form>
+    </div>
+  </div>
+  <script>
+    const form = document.getElementById('identifyForm')
+    form.addEventListener('submit', async () => {
+      const formData = new FormData(form)
+      var object = {}
+      formData.forEach((value, key) => (object[key] = value))
+      window.posthog.identify(formData.get('email'), object)
+    })
+  </script>
+</Container>

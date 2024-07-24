@@ -1,0 +1,282 @@
+---
+import Container from '../../components/Container.astro'
+import Topic2 from '../../components/Topic2.astro'
+import AIRForm from '../../components/ai-readiness-assessment-form.astro'
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout title='About Collabwrite'>
+  <main class='space-y-20'>
+    <Container>
+      <div
+        class='relative flex flex-col-reverse items-center md:flex-row'
+        id='hero'
+      >
+        <div class='row items-center py-5 md:pb-20 md:pt-10'>
+          <div class='text-center space-y-10'>
+            <h2
+              class='text-5xl font-medium leading-none md:text-6xl'
+              id='takeassessment'
+            >
+              Get to know your business's AI potential
+            </h2>
+            <p class='mt-6 mb-8 text-xl font-normal leading-7 sm:mb-12'>
+              Discover where you stand in sustainable AI incorporation and chart
+              your path to success. Carefully take this assessment to get a
+              detailed report, insights, and action items.
+            </p>
+
+            <AIRForm />
+          </div>
+        </div>
+      </div>
+      <div class='text-center'>
+        <Topic2 title='Key Benefits' />
+        <ul class='leading-relaxed text-2xl list-disc ml-10'>
+          <li>Gain detailed insights into your AI readiness</li>
+          <li>Receive actionable recommendations for sustainable growth</li>
+          <li>Benchmark your progress against industry standards</li>
+          <li>Identify opportunities for AI-driven innovation</li>
+        </ul>
+      </div>
+      <div class='mt-10 text-center'>
+        <Topic2 title='How It Works' />
+        <ul class='leading-relaxed text-2xl list-none ml-10'>
+          <li>Step #1 Complete our comprehensive 120-question assessment.</li>
+          <li>Step #2 Receive a personalized report with detailed analysis.</li>
+          <li>Step #3 Get actionable insights and recommendations.</li>
+          <li>
+            Step #4 Implement strategies for sustainable AI incorporation.
+          </li>
+        </ul>
+      </div>
+      <div class='mt-10 text-center'>
+        <Topic2 title='AI Onboard Score' class='flex' />
+        <ul class='leading-relaxed text-2xl list-none ml-10'>
+          <li>Are you leveraging AI to its full potential in your business?</li>
+          <li>
+            Do you know how your AI readiness compares to industry leaders?
+          </li>
+          <li>
+            Are you aware of the sustainability impacts of your AI initiatives?
+          </li>
+          <li>
+            Is your team equipped to handle the challenges of AI implementation?
+          </li>
+        </ul>
+      </div>
+      <div class='pt-32' id='assessmentoverview'>
+        <div class='grid place-items-center gap-5 mb-10 flex'>
+          <span class='text-4xl p-4 font-medium bg-lime text-black rounded-md'>
+            Assessment Overview
+          </span>
+          <p class='text-xl font-normal text-center md:text-start lg:w-2/3'>
+            Our comprehensive AI Readiness Assessment covers 120 questions
+            across key areas:
+          </p>
+        </div>
+        <section class='text-gray-600 body-font'>
+          <div class='container px-5 py-24 mx-auto'>
+            <div
+              class='flex items-center lg:w-3/5 mx-auto border-b pb-10 border-gray-200 sm:flex-row flex-col'
+            >
+              <div
+                class='sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0'
+              >
+                <svg
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  class='w-8'
+                  viewBox='0 0 24 24'
+                >
+                  <path d='M22 12h-4l-3 9L9 3l-3 9H2'></path>
+                </svg><div class='text-7xl'>1</div>
+              </div>
+              <div class='flex-grow sm:text-left text-center mt-6 sm:mt-0'>
+                <h2 class='text-gray-900 text-lg title-font font-medium mb-2'>
+                  AI Strategy and Governance
+                </h2>
+                <ul class='leading-relaxed text-base list-disc'>
+                  <li>Alignment with business goals</li>
+                  <li>Ethical considerations</li>
+                  <li>Risk management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div
+          class='flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col'
+        >
+          <div class='flex-grow sm:text-left text-center mt-6 sm:mt-0'>
+            <h2 class='text-gray-900 text-lg title-font font-medium mb-2'>
+              Data Infrastructure and Management
+            </h2>
+            <ul class='leading-relaxed text-base list-disc'>
+              <li>Alignment with business goals</li>
+              <li>Ethical considerations</li>
+              <li>Risk management</li>
+            </ul>
+          </div>
+          <div
+            class='sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0'
+          >
+            <svg
+              fill='none'
+              stroke='currentColor'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              stroke-width='2'
+              class='w-8'
+              viewBox='0 0 24 24'
+            >
+              <circle cx='6' cy='6' r='3'></circle>
+              <circle cx='6' cy='18' r='3'></circle>
+              <path d='M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12'
+              ></path>
+            </svg>
+            <div class='text-7xl'>2</div>
+          </div>
+        </div>
+        <div
+          class='flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col border-b pb-10 mb-10 border-gray-200'
+        >
+          <div
+            class='sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0'
+          >
+            <svg
+              fill='none'
+              stroke='currentColor'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              stroke-width='2'
+              class='w-8'
+              viewBox='0 0 24 24'
+            >
+              <path d='M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2'></path>
+              <circle cx='12' cy='7' r='4'></circle>
+            </svg><div class='text-7xl'>3</div>
+          </div>
+          <div class='flex-grow sm:text-left text-center mt-6 sm:mt-0'>
+            <h2 class='text-gray-900 text-lg title-font font-medium mb-2'>
+              AI Capabilities and Expertise
+            </h2>
+            <ul class='leading-relaxed text-base list-disc'>
+              <li>Current AI applications</li>
+              <li>In-house AI skills</li>
+              <li>Training and development programs</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class='flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col'
+        >
+          <div class='flex-grow sm:text-left text-center mt-6 sm:mt-0'>
+            <h2 class='text-gray-900 text-lg title-font font-medium mb-2'>
+              Sustainability Integration
+            </h2>
+            <ul class='leading-relaxed text-base list-disc'>
+              <li>Environmental impact awareness</li>
+              <li>Energy efficiency measures</li>
+              <li>Sustainable AI practices</li>
+            </ul>
+          </div>
+          <div
+            class='sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0'
+          >
+            <svg
+              fill='none'
+              stroke='currentColor'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              stroke-width='2'
+              class='w-8'
+              viewBox='0 0 24 24'
+            >
+              <circle cx='6' cy='6' r='3'></circle>
+              <circle cx='6' cy='18' r='3'></circle>
+              <path d='M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12'
+              ></path>
+            </svg><div class='text-7xl'>4</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class='flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col border-b pb-10 mb-10 border-gray-200'
+      >
+        <div
+          class='sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0'
+        >
+          <svg
+            fill='none'
+            stroke='currentColor'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            class='w-8'
+            viewBox='0 0 24 24'
+          >
+            <path d='M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2'></path>
+            <circle cx='12' cy='7' r='4'></circle>
+          </svg><div class='text-7xl'>5</div>
+        </div>
+        <div class='flex-grow sm:text-left text-center mt-6 sm:mt-0'>
+          <h2 class='text-gray-900 text-lg title-font font-medium mb-2'>
+            Technology Infrastructure
+          </h2>
+          <ul class='leading-relaxed text-base list-disc'>
+            <li>Hardware readiness</li>
+            <li>Cloud capabilities</li>
+            <li>Integration with existing systems</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class='flex items-center lg:w-3/5 mx-auto pb-10 mb-10 border-gray-200 sm:flex-row flex-col'
+      >
+        <div class='flex-grow sm:text-left text-center mt-6 sm:mt-0'>
+          <h2 class='text-gray-900 text-lg title-font font-medium mb-2'>
+            AI Ethics and Responsible Use
+          </h2>
+          <ul class='leading-relaxed text-base list-disc'>
+            <li>Bias detection and mitigation</li>
+            <li>Transparency and explainability</li>
+            <li>Compliance with regulations</li>
+          </ul>
+        </div>
+        <div
+          class='sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0'
+        >
+          <svg
+            fill='none'
+            stroke='currentColor'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            class='w-8'
+            viewBox='0 0 24 24'
+          >
+            <circle cx='6' cy='6' r='3'></circle>
+            <circle cx='6' cy='18' r='3'></circle>
+            <path d='M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12'></path>
+          </svg><div class='text-7xl'>6</div>
+        </div>
+      </div>
+      <div class='items-center justify-center flex'>
+        <a
+          class='px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex'
+          href='#takeassessment'
+        >
+          <h2 class='text-center text-xl font-normal leading-7'>
+            Take AI Readiness Assessment
+          </h2>
+        </a>
+      </div>
+    </Container>
+  </main>
+
+  <!-- <Team /> -->
+</Layout>

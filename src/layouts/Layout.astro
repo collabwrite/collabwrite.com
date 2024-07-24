@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar.astro'
 import Footer from '../components/Footer.astro'
 import { ViewTransitions } from 'astro:transitions'
 import { GoogleAnalytics } from 'astro-google-analytics'
+import PostHog from '../components/posthog.astro'
 ---
 
 <!doctype html>
@@ -29,6 +30,7 @@ import { GoogleAnalytics } from 'astro-google-analytics'
     />
     <ViewTransitions />
     <GoogleAnalytics id='G-87YMWXD77N' />
+    <PostHog />
   </head>
   <body class='bg-white font-SpaceGrotesk'>
     <Navbar />
