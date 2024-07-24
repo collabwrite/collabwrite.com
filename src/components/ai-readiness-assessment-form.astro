@@ -138,12 +138,22 @@ import Container from './Container.astro'
     </div>
   </div>
   <script>
-    const form = document.getElementById('identifyForm')
-    form.addEventListener('submit', async () => {
-      const formData = new FormData(form)
-      var object = {}
-      formData.forEach((value, key) => (object[key] = value))
-      window.posthog.identify(formData.get('email'), object)
-    })
+    const form = document.getElementById('identifyForm')! as HTMLFormElement
+    declare global {
+      interface Window {
+        posthog: any
+      }
+    }
+
+    window.posthog = window.posthog || {}
+
+    if (form) {
+      form.addEventListener('submit', async () => {
+        const formData = new FormData(form)
+        let object: any = {}
+        formData.forEach((value, key) => (object[key] = value))
+        window.posthog.identify(formData.get('email'), object)
+      })
+    }
   </script>
 </Container>
