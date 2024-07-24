@@ -3,6 +3,7 @@ import '../styles/global.css'
 import Navbar from '../components/Navbar.astro'
 import Footer from '../components/Footer.astro'
 import { ViewTransitions } from 'astro:transitions'
+import { GoogleAnalytics } from 'astro-google-analytics'
 ---
 
 <!doctype html>
@@ -27,6 +28,7 @@ import { ViewTransitions } from 'astro:transitions'
       rel='stylesheet'
     />
     <ViewTransitions />
+    <GoogleAnalytics id='G-87YMWXD77N' />
   </head>
   <body class='bg-white font-SpaceGrotesk'>
     <Navbar />
