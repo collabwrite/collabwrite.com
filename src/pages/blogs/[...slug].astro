@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content'
+import BlogPost from '../../layouts/BlogPost.astro'
+import TableOfContents from '../../components/TableOfContents.astro'
+import Prose from '../../components/Prose.astro'
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blogs')
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry }
+  }))
+}
+
+const { entry } = Astro.props
+const { Content, headings } = await entry.render()
+---
+
+<BlogPost frontmatter={entry.data}>
+  <TableOfContents headings={headings} />
+  <Prose>
+    <Content />
+  </Prose>
+</BlogPost>
