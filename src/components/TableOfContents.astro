@@ -12,16 +12,19 @@ const { headings } = Astro.props
   <h2 class='text-xl font-semibold mb-4'>Table of Contents</h2>
   <ul class='space-y-2'>
     {
-      headings.map((heading) => (
-        <li class={`toc-level-${heading.depth}`}>
-          <a
-            href={`#${heading.slug}`}
-            class='text-blue-600 hover:text-blue-800 transition-colors duration-200'
-          >
-            {heading.text}
-          </a>
-        </li>
-      ))
+      headings.map(
+        (heading) =>
+          heading.depth < 4 && (
+            <li class={`toc-level-${heading.depth}`}>
+              <a
+                href={`#${heading.slug}`}
+                class='text-blue-600 hover:text-blue-800 transition-colors duration-200'
+              >
+                {heading.text}
+              </a>
+            </li>
+          )
+      )
     }
   </ul>
 </nav>
@@ -32,5 +35,8 @@ const { headings } = Astro.props
   }
   .toc-level-3 {
     @apply ml-8;
+  }
+  .toc-level-4 {
+    @apply ml-12;
   }
 </style>

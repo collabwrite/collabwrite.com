@@ -1,8 +1,9 @@
 ---
 import { getCollection } from 'astro:content'
 import BlogPost from '../../layouts/BlogPost.astro'
-import TableOfContents from '../../components/TableOfContents.astro'
 import Prose from '../../components/Prose.astro'
+import Tags from '../../components/Tags.astro'
+import TableOfContents from '../../components/TableOfContents.astro'
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('blogs')
@@ -17,8 +18,12 @@ const { Content, headings } = await entry.render()
 ---
 
 <BlogPost frontmatter={entry.data}>
+  <Tags tags={entry.data.tags} />
+
   <TableOfContents headings={headings} />
-  <Prose>
-    <Content />
-  </Prose>
+  <div class='max-w-5xl'>
+    <Prose>
+      <Content />
+    </Prose>
+  </div>
 </BlogPost>
