@@ -2,16 +2,22 @@
 import { getCollection } from 'astro:content'
 import Layout from '../../layouts/Layout.astro'
 import Container from '../../components/Container.astro'
+const { tag } = Astro.params
 
 const posts = await getCollection('blogs')
 posts.sort(
   (a, b) => b.data.publish_date.valueOf() - a.data.publish_date.valueOf()
 )
+const filteredPosts = posts.filter((post) =>
+  post.frontmatter.tags.includes(tag)
+)
+return {
+  params: { tag },
+  props: { posts: filteredPosts }
+}
 ---
 
-<Layout
-  title='Collabwrite Blogs and Insights: How to build solutions for business growth'
->
+<Layout title={`Collabwrite Blogs and Insights under section ${tag}`}>
   <main class='space-y-20'>
     <Container>
       <div class='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
@@ -19,17 +25,12 @@ posts.sort(
           <h2
             class='mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900'
           >
-            Blogs and Insights
+            Blogs and Insights tagged with "{tag}"
           </h2>
-          <p class='font-light text-gray-500 sm:text-xl'>
-            Explore our works, expert insights on generative AI, product
-            development, digital marketing, and cybersecurity to accelerate your
-            business growth and efficiency.
-          </p>
         </div>
         <div class='grid gap-8 lg:grid-cols-2'>
           {
-            posts.map((post) => {
+            filteredPosts.map((post) => {
               return (
                 <article class='p-6 bg-white rounded-3xl border border-gray-200 shadow-card'>
                   <div class='flex justify-between items-center mb-5 text-gray-500'>

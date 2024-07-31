@@ -1,11 +1,10 @@
 ---
 import { SEO } from 'astro-seo'
-import Prose from '../components/Prose.astro'
-import TableOfContents from '../components/TableOfContents.astro'
 import Layout from './Layout.astro'
 
 const { frontmatter, headings } = Astro.props
-const { title, description, publish_date, author, image } = frontmatter
+const { title, description, author_image, publish_date, author, image } =
+  frontmatter
 ---
 
 <Layout>
@@ -27,8 +26,15 @@ const { title, description, publish_date, author, image } = frontmatter
     <div class=''>
       <h1 class='text-4xl font-bold mb-4'>{title}</h1>
       <div class='mb-8 text-gray-600'>
-        <p>Published on: {publish_date}</p>
-        <p>Author: {author}</p>
+        <div class='flex items-center space-x-4'>
+          <img
+            class='w-9 h-9 rounded-full'
+            src={author_image}
+            alt={author + ' cover'}
+          />
+          <span class='font-medium'>{author}</span>
+          <p>Published on: {publish_date}</p>
+        </div>
       </div>
 
       <div class='prose prose-lg max-w-none'>
