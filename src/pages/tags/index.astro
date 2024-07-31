@@ -8,9 +8,7 @@ const posts = await getCollection('blogs')
 posts.sort(
   (a, b) => b.data.publish_date.valueOf() - a.data.publish_date.valueOf()
 )
-const filteredPosts = posts.filter((post) =>
-  post.frontmatter.tags.includes(tag)
-)
+const filteredPosts = posts.filter((post) => post.data.tags.includes(tag))
 return {
   params: { tag },
   props: { posts: filteredPosts }
