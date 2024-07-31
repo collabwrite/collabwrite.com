@@ -5,21 +5,18 @@ import Footer from '../components/Footer.astro'
 import { ViewTransitions } from 'astro:transitions'
 import { GoogleAnalytics } from 'astro-google-analytics'
 import PostHog from '../components/posthog.astro'
+const { title, description } = Astro.props
 ---
 
 <!doctype html>
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
-    <meta
-      name='description'
-      content='Collabwrite - AI and Technology consulting'
-    />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
     <link rel='sitemap' href='/sitemap-index.xml' />
-    <title>Collabwrite</title>
+    <title>{title}</title>
     <meta
       name='description'
       content='Collabwrite is a leading technology consulting agency offering AI, Digital Marketing, Security Compliance and Product Development.'
