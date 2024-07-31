@@ -5,7 +5,8 @@ import Footer from '../components/Footer.astro'
 import { ViewTransitions } from 'astro:transitions'
 import { GoogleAnalytics } from 'astro-google-analytics'
 import PostHog from '../components/posthog.astro'
-const { title, description } = Astro.props
+import { SEO } from 'astro-seo'
+const { title, description, ogtype, ogimage } = Astro.props
 ---
 
 <!doctype html>
@@ -16,11 +17,22 @@ const { title, description } = Astro.props
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
     <link rel='sitemap' href='/sitemap-index.xml' />
-    <title>{title}</title>
-    <meta
-      name='description'
-      content='Collabwrite is a leading technology consulting agency offering AI, Digital Marketing, Security Compliance and Product Development.'
+    <SEO
+      title={title || 'Collabwrite'}
+      description={description ||
+        'Collabwrite is a leading technology consulting agency offering AI, Digital Marketing, Security Compliance and Product Development.'}
+      openGraph={{
+        basic: {
+          title: title || 'Collabwrite',
+          type: ogtype || 'website',
+          image: ogimage || '/collabwrite.jpg'
+        }
+      }}
+      twitter={{
+        creator: 'umeshganapathy'
+      }}
     />
+
     <link
       href='https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'
       rel='stylesheet'
