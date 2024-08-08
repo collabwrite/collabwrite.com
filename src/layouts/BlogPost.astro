@@ -7,10 +7,8 @@ const { title, description, author_image, publish_date, author, image } =
   frontmatter
 ---
 
-<Layout>
+<Layout title={title} description={description}>
   <SEO
-    title={title}
-    description={description}
     openGraph={{
       basic: {
         title: title,
