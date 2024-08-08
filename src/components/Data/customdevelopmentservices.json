@@ -4,53 +4,53 @@
     "name1": "Web, Mobile & Enterprise",
     "name2": "Application Development",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/01.svg"
+    "image": "/services/01.svg"
   },
   {
     "id": 2,
     "name1": "Quality Assurance (QA)",
     "name2": "and Testing",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/02.svg"
+    "image": "/services/02.svg"
   },
   {
     "id": 3,
     "name1": "Software Maintenance",
     "name2": "and Support",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-    "arrow": "./services/aw.svg",
+    "arrow": "/services/aw.svg",
     "link": "./",
-    "image": "./services/03.svg"
+    "image": "/services/03.svg"
   },
   {
     "id": 4,
     "name1": "Cloud Integration",
     "name2": "and Migration",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/04.svg"
+    "image": "/services/04.svg"
   },
   {
     "id": 5,
     "name1": "E-commerce/ONDC",
     "name2": "Platforms",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/05.svg"
+    "image": "/services/05.svg"
   },
   {
     "id": 6,
     "name1": "Software Design/UI/UX",
     "name2": "and Development",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-    "arrow": "./services/aw.svg",
+    "arrow": "/services/aw.svg",
     "link": "./",
-    "image": "./services/06.svg"
+    "image": "/services/06.svg"
   }
 ]

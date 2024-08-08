@@ -4,53 +4,53 @@
     "name1": "Machine Learning &",
     "name2": "AI Solutions",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
-    "link": "./machine-learning-ai-solutions",
-    "image": "./services/01.svg"
+    "arrow": "/services/ag.svg",
+    "link": "./machine-learning-ai-solution/s",
+    "image": "/services/01.svg"
   },
   {
     "id": 2,
     "name1": "Product PoC / MVP",
     "name2": "Development",
     "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
-    "link": "./product-development",
-    "image": "./services/02.svg"
+    "arrow": "/services/ag.svg",
+    "link": "./product-development/",
+    "image": "/services/02.svg"
   },
   {
     "id": 3,
     "name1": "Custom Software",
     "name2": "Development",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-    "arrow": "./services/aw.svg",
-    "link": "./custom-software-development",
-    "image": "./services/03.svg"
+    "arrow": "/services/aw.svg",
+    "link": "./custom-software-development/",
+    "image": "/services/03.svg"
   },
   {
     "id": 4,
     "name1": "Digital Marketing",
     "name2": "Services",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
-    "link": "./digital-marketing-services",
-    "image": "./services/04.svg"
+    "arrow": "/services/ag.svg",
+    "link": "./digital-marketing-services/",
+    "image": "/services/04.svg"
   },
   {
     "id": 5,
     "name1": "Cybersecurity",
     "name2": "",
     "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
-    "link": "./cybersecurity",
-    "image": "./services/05.svg"
+    "arrow": "/services/ag.svg",
+    "link": "./cybersecurity/",
+    "image": "/services/05.svg"
   },
   {
     "id": 6,
     "name1": "Hybrid",
     "name2": "Teams",
     "background": "h-[310px] p-12 bg-black text-white rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/aw.svg",
-    "link": "./hybrid-teams",
-    "image": "./services/06.svg"
+    "arrow": "/services/aw.svg",
+    "link": "./hybrid-teams/",
+    "image": "/services/06.svg"
   }
 ]

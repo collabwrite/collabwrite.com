@@ -4,53 +4,53 @@
     "name1": "SOC 2 ",
     "name2": "(System and Organization Controls 2)",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/01.svg"
+    "image": "/services/01.svg"
   },
   {
     "id": 2,
     "name1": "VPAT",
     "name2": "(Voluntary Product Accessibility Template)",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/02.svg"
+    "image": "/services/02.svg"
   },
   {
     "id": 3,
     "name1": "Risk",
     "name2": "Assessment",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-    "arrow": "./services/aw.svg",
+    "arrow": "/services/aw.svg",
     "link": "./",
-    "image": "./services/03.svg"
+    "image": "/services/03.svg"
   },
   {
     "id": 4,
     "name1": "Audit",
     "name2": "and Compliance",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/04.svg"
+    "image": "/services/04.svg"
   },
   {
     "id": 5,
     "name1": "Infosec",
     "name2": "Staffing",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/05.svg"
+    "image": "/services/05.svg"
   },
   {
     "id": 6,
     "name1": "API/Cloud/Network",
     "name2": "Security",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-    "arrow": "./services/aw.svg",
+    "arrow": "/services/aw.svg",
     "link": "./",
-    "image": "./services/06.svg"
+    "image": "/services/06.svg"
   }
 ]

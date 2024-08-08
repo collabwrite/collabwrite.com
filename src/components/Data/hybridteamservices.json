@@ -4,53 +4,53 @@
     "name1": "Technology and",
     "name2": "IT Professionals",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/01.svg"
+    "image": "/services/01.svg"
   },
   {
     "id": 2,
     "name1": "Project Managers and",
     "name2": "Team Leaders",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/02.svg"
+    "image": "/services/02.svg"
   },
   {
     "id": 3,
     "name1": "Digital Marketing",
     "name2": "Specialists",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-    "arrow": "./services/aw.svg",
+    "arrow": "/services/aw.svg",
     "link": "./",
-    "image": "./services/03.svg"
+    "image": "/services/03.svg"
   },
   {
     "id": 4,
     "name1": "Human Resources and",
     "name2": "People Operations",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/04.svg"
+    "image": "/services/04.svg"
   },
   {
     "id": 5,
     "name1": "Data Entry",
     "name2": "Operators",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "arrow": "/services/ag.svg",
     "link": "./",
-    "image": "./services/05.svg"
+    "image": "/services/05.svg"
   },
   {
     "id": 6,
     "name1": "Customer Service",
     "name2": "Representatives",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-    "arrow": "./services/aw.svg",
+    "arrow": "/services/aw.svg",
     "link": "./",
-    "image": "./services/06.svg"
+    "image": "/services/06.svg"
   }
 ]
