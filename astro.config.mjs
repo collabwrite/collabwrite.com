@@ -5,6 +5,7 @@ import mdx from '@astrojs/mdx'
 import { remarkReadingTime } from './src/utils/remarkReadingTime.ts'
 import remarkUnwrapImages from 'remark-unwrap-images'
 import rehypeExternalLinks from 'rehype-external-links'
+import icon from 'astro-icon'
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,7 +15,8 @@ export default defineConfig({
       applyBaseStyles: false
     }),
     sitemap(),
-    mdx()
+    mdx(),
+    icon()
   ],
   markdown: {
     remarkPlugins: [remarkUnwrapImages, remarkReadingTime],

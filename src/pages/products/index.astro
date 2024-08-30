@@ -1,0 +1,158 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import ToolSection from '../../components/ToolSection.astro'
+import Button from '../../components/Button.astro'
+import Container from '../../components/Container.astro'
+const WEBSITES = {
+  TRAVEL: [
+    {
+      name: 'TripMaker Studio',
+      description: 'Personal AI friend for your next trip planning.',
+      href: 'https://www.tripmaker.studio/',
+      iconPath: 'tms',
+      iconBgColour: '#2463eb'
+    }
+  ],
+  PARENTING: [
+    {
+      name: 'PAI.CARE',
+      description: 'Personal AI Friend for Mindful Parenting.',
+      href: 'https://pai.care/',
+      iconPath: 'paicare',
+      iconBgColour: '#000000'
+    }
+  ],
+  HOME: [
+    {
+      name: 'PropAIty.com',
+      description: 'Personal AI Friend for Home Buying.',
+      href: 'https://propaity.com/',
+      iconPath: 'propaity',
+      iconBgColour: '#414350'
+    }
+  ],
+  TECHNOLOGY: [
+    {
+      name: 'DomainAI',
+      description: 'AI-powered domain manager.',
+      href: 'https://domainai.app/',
+      iconPath: 'domainai',
+      iconBgColour: '#9c27b0'
+    },
+    {
+      name: 'Govn.ai',
+      description: 'AI solutions for governance and public services.',
+      href: 'https://govn.ai/',
+      iconPath: 'govnai',
+      iconBgColour: '#3f51b5'
+    }
+  ],
+  EDUCATION: [
+    {
+      name: 'TinkerLabs Club',
+      description: 'Innovative learning and experimentation platform.',
+      href: 'https://tinkerlabs.club/',
+      iconPath: 'tinkerlabs',
+      iconBgColour: '#ff9800'
+    },
+    {
+      name: 'TinkerLabs LLC',
+      description: 'Creative solutions for educational projects.',
+      href: 'https://tinkerlabs.llc/',
+      iconPath: 'tinkerlabs-llc',
+      iconBgColour: '#ff9800'
+    }
+  ],
+  COLLABORATION: [
+    {
+      name: 'CollabWrite',
+      description: 'Growth Collaboration Platform.',
+      href: 'https://collabwrite.com/',
+      iconPath: 'collabwrite',
+      iconBgColour: '#2196f3'
+    },
+    {
+      name: 'Working Studio',
+      description: 'A platform for creative collaboration and workspace.',
+      href: 'https://workingstudio.me/',
+      iconPath: 'workingstudio',
+      iconBgColour: '#673ab7'
+    }
+  ],
+  FINANCE: [
+    {
+      name: 'WealthTaxed',
+      description: 'Financial planning and tax solutions.',
+      href: 'https://wealthtaxed.com/',
+      iconPath: 'wealthtaxed',
+      iconBgColour: '#f44336'
+    }
+  ],
+  MISCELLANEOUS: [
+    {
+      name: 'PlanAI Club',
+      description: 'AI-driven day planning tool for ultra productivity.',
+      href: 'https://planai.club/',
+      iconPath: 'planai',
+      iconBgColour: '#9c27b0'
+    },
+    {
+      name: 'SubPay',
+      description: 'Subscription payment management platform.',
+      href: 'https://subpay.id/',
+      iconPath: 'subpay',
+      iconBgColour: '#4caf50'
+    },
+    {
+      name: 'Namma Club',
+      description: 'Community platform for local engagement.',
+      href: 'https://namma.club/',
+      iconPath: 'nammaclub',
+      iconBgColour: '#ffeb3b'
+    },
+    {
+      name: 'WarmUp Cam',
+      description: 'Camera app for warm-up exercises and activities.',
+      href: 'https://warmup.cam/',
+      iconPath: 'warmup',
+      iconBgColour: '#3f51b5'
+    }
+  ]
+}
+---
+
+<Layout
+  title='Collabwrite Products'
+  description=`Products that growitng under Collabwrite.`
+>
+  <main class='space-y-20'>
+    <Container>
+      <div
+        class='relative flex flex-col-reverse items-center md:flex-row'
+        id='hero'
+      >
+        <div class='row items-center w-full py-5 md:pb-20 md:pt-10'>
+          <div class='text-center space-y-10'>
+            <h1 class='text-5xl font-medium leading-none md:text-6xl'>
+              Collabwrite Products
+            </h1>
+            <p class='mt-6 mb-8 text-xl font-normal leading-7 sm:mb-12'>
+              Products that growitng under Collabwrite.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class='mt-5 flex w-full flex-col gap-y-10'>
+        <ToolSection title='Travel' tools={WEBSITES.TRAVEL} />
+        <ToolSection title='Parenting' tools={WEBSITES.PARENTING} />
+        <ToolSection title='Home' tools={WEBSITES.HOME} />
+        <ToolSection title='Technology' tools={WEBSITES.TECHNOLOGY} />
+        <ToolSection title='Education' tools={WEBSITES.EDUCATION} />
+        <ToolSection title='Collaboration' tools={WEBSITES.COLLABORATION} />
+        <ToolSection title='Finance' tools={WEBSITES.FINANCE} />
+        <ToolSection title='Miscellaneous' tools={WEBSITES.MISCELLANEOUS} />
+      </div>
+    </Container>
+  </main>
+</Layout>
