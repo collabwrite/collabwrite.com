@@ -10,8 +10,8 @@
   },
   {
     "id": 2,
-    "name1": "VPAT",
-    "name2": "(Voluntary Product Accessibility Template)",
+    "name1": "VAPT",
+    "name2": "(Vulnerability Assessment and Penetration Testing)",
     "background": "h-[310px] p-12 bg-lime-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "/services/ag.svg",
     "link": "./",
