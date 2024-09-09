@@ -42,9 +42,14 @@ posts.sort(
                     </span>
                     <span class='text-sm'>{post.data.publish_date}</span>
                   </div>
-                  <h2 class='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-                    {post.data.title}
-                  </h2>
+                  <a
+                    href={`/blogs/${post.data.slug}/`}
+                    class='inline-flex items-center font-medium text-black hover:underline'
+                  >
+                    <h2 class='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
+                      {post.data.title}
+                    </h2>
+                  </a>
                   <p
                     class='mb-5 font-light text-gray-500'
                     style='white-space: pre-line'

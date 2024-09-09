@@ -22,7 +22,10 @@ export async function getStaticPaths() {
 const { tag, posts } = Astro.props
 ---
 
-<Layout title={`Collabwrite - Blogs and Insights under section ${tag}`}>
+<Layout
+  title={`Collabwrite - Blogs and Insights under section ${tag}`}
+  description={`Stay informed with Collabwrite's latest blogs and insights on ${tag}. Explore expert analysis, industry trends, and practical tips to help you navigate the ever-changing landscape of technology and digital innovation.`}
+>
   <main class='space-y-20'>
     <Container>
       <div class='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
