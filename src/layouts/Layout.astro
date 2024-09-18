@@ -7,6 +7,7 @@ import { GoogleAnalytics } from 'astro-google-analytics'
 import PostHog from '../components/posthog.astro'
 import { SEO } from 'astro-seo'
 const { title, description, ogtype, ogimage } = Astro.props
+const isDev = import.meta.env.DEV
 ---
 
 <!doctype html>
@@ -16,6 +17,7 @@ const { title, description, ogtype, ogimage } = Astro.props
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
+    {isDev && <meta name='robots' content='noindex,nofollow' />}
     <link rel='sitemap' href='/sitemap-index.xml' />
     <SEO
       title={title || 'Collabwrite'}
