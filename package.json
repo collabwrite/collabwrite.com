@@ -19,6 +19,7 @@
     "astro-google-analytics": "^1.0.3",
     "astro-icon": "^1.1.1",
     "astro-navbar": "^2.3.3",
+    "astro-robots-txt": "^1.0.0",
     "astro-seo": "^0.8.4",
     "clsx": "^2.1.1",
     "mdast-util-to-string": "^4.0.0",

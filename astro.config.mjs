@@ -6,8 +6,8 @@ import { remarkReadingTime } from './src/utils/remarkReadingTime.ts'
 import remarkUnwrapImages from 'remark-unwrap-images'
 import rehypeExternalLinks from 'rehype-external-links'
 import icon from 'astro-icon'
+import robotsTxt from 'astro-robots-txt'
 
-// https://astro.build/config
 export default defineConfig({
   site: 'https://www.collabwrite.com',
   integrations: [
@@ -16,7 +16,8 @@ export default defineConfig({
     }),
     sitemap(),
     mdx(),
-    icon()
+    icon(),
+    robotsTxt()
   ],
   markdown: {
     remarkPlugins: [remarkUnwrapImages, remarkReadingTime],
